@@ -8,32 +8,24 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ImplicitWait {
 
-	public static void main(String[] args){
+	public static void main(String[] args) {
 
-		//Open Chrome Browser
+		// Open Chrome Browser
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\abhre\\Documents\\GSync\\PCSync\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		
-		// PageLoad
-		driver.manage().timeouts().pageLoadTimeout(1, TimeUnit.SECONDS);
-		
-		driver.get("http://newtours.demoaut.com/"); //0-20
+
+		//Open AUT
+		driver.get("http://newtours.demoaut.com/");
 
 		// Implicitly wait
-		//driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-		
-		// SetScript Timeout
-		//driver.manage().timeouts().setScriptTimeout(1, TimeUnit.SECONDS);
-		
-		
-		//sleep Wait command
-				
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 		driver.findElement(By.name("userName")).sendKeys("tutorial");// 0-10
 		driver.findElement(By.name("password")).sendKeys("tutorial");// 0-10
 		driver.findElement(By.name("login")).click();// 0-10
 
-		driver.findElement(By.linkText("PROFILE")).click();// 0-20
+		driver.findElement(By.linkText("PROFILE")).click();
 
 		driver.quit();
 

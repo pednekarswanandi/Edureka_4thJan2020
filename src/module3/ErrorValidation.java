@@ -26,7 +26,7 @@ public class ErrorValidation {
 		
 		System.out.println(Err);
 		
-		boolean ErrorMessage = Err.equals("Email ID/Username cannot be lef");
+		boolean ErrorMessage = Err.equals("Email ID/Username cannot be left blank");
 		
 		System.out.println(ErrorMessage);
 		

@@ -4,7 +4,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -20,21 +19,24 @@ public class ExplicitWait {
 		// Open AUT
 		driver.get("http://seleniumautomationpractice.blogspot.com/2017/10/waitcommands.html");
 
-		/*driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		driver.findElement(By.linkText("LinkText-3")).click();
+		/*
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		
+		driver.findElement(By.linkText("LinkText-6")).click();
 		*/
 		
 		
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		//Click on Linktext-5 using Explicit wait, ExpectedConditions & element to be clickable method
 		
-		wait.until(ExpectedConditions.elementToBeClickable(By.linkText("LinkText-6"))).click();
+		WebDriverWait wait = new WebDriverWait(driver, 2);
 		
-		driver.navigate().back();
+		wait.until(ExpectedConditions.elementToBeClickable(By.linkText("LinkText-6"))).click(); //0-20
 		
-		WebDriverWait wait1 = new WebDriverWait(driver, 10);
 		
-		wait1.until(ExpectedConditions.elementToBeClickable(By.linkText("LinkText-4"))).click();
+		
+		
+		
 		
 		
 	}
