@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [GithubLoginSuite]">
+  <test thread-count="5" name="GithubLoginTest(failed)">
+    <classes>
+      <class name="module6.GitHubLogin2">
+        <methods>
+          <include name="Logout"/>
+          <include name="ValidateURL"/>
+          <include name="OpenAUT"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- module6.GitHubLogin2 -->
+    </classes>
+  </test> <!-- GithubLoginTest(failed) -->
+</suite> <!-- Failed suite [GithubLoginSuite] -->

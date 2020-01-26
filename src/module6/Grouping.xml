@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="GroupingSuiteExecution">
+	<test name="Run Specific Group">
+		<groups>
+			<run>
+				<include name="Setup"></include>
+				<include name="LinkCheck"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="module6.Grouping1"></class>
+		</classes>
+	</test>
+		<test name="Run Specific Group1">
+		<groups>
+			<run>
+				<include name="Setup"></include>
+				<include name="LoginLogout"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="module6.Grouping1"></class>
+		</classes>
+	</test>
+</suite>
