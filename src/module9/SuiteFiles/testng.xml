@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="DataDrivenTesting">
+	<test name="DDTTestExecutions">
+		<classes>
+			<class name="module9.TestCases.DDT" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
