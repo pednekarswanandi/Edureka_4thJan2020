@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9320" started-at="2020-02-08T09:29:34 IST" finished-at="2020-02-08T09:29:44 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9320" started-at="2020-02-08T09:29:34 IST" finished-at="2020-02-08T09:29:44 IST">
+      <class name="module6.GitHubLogin">
+        <test-method status="PASS" signature="Browser()[pri:0, instance:module6.GitHubLogin@3cef309d]" name="Browser" is-config="true" duration-ms="5780" started-at="2020-02-08T09:29:28 IST" finished-at="2020-02-08T09:29:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser -->
+        <test-method status="PASS" signature="OpenAUT()[pri:0, instance:module6.GitHubLogin@3cef309d]" name="OpenAUT" is-config="true" duration-ms="845" started-at="2020-02-08T09:29:34 IST" finished-at="2020-02-08T09:29:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenAUT -->
+        <test-method status="PASS" signature="ValidateURL()[pri:0, instance:module6.GitHubLogin@3cef309d]" name="ValidateURL" is-config="true" duration-ms="6" started-at="2020-02-08T09:29:35 IST" finished-at="2020-02-08T09:29:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateURL -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:module6.GitHubLogin@3cef309d]" name="Login" duration-ms="5329" started-at="2020-02-08T09:29:35 IST" finished-at="2020-02-08T09:29:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Logout()[pri:0, instance:module6.GitHubLogin@3cef309d]" name="Logout" is-config="true" duration-ms="3115" started-at="2020-02-08T09:29:40 IST" finished-at="2020-02-08T09:29:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method status="PASS" signature="CloseTestCase()[pri:0, instance:module6.GitHubLogin@3cef309d]" name="CloseTestCase" is-config="true" duration-ms="3622" started-at="2020-02-08T09:29:44 IST" finished-at="2020-02-08T09:29:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTestCase -->
+      </class> <!-- module6.GitHubLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
